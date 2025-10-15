@@ -73,7 +73,7 @@ Administrators can view department structures, create new departments, update ex
 - **FR-006**: System MUST validate all input data for correctness and completeness
 - **FR-007**: System MUST provide search and filter capabilities for employee listings
 - **FR-008**: System MUST support department management with parent-child relationships
-- **FR-009**: System MUST store employee passwords securely
+- **FR-009**: System MUST store employee passwords securely using bcrypt hashing algorithm with minimum 12 rounds and per-password salting
 - **FR-010**: System MUST log user actions for audit purposes
 
 ### Key Entities *(include if feature involves data)*

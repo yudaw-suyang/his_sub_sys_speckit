@@ -1,3 +1,9 @@
+## Phase 2: Foundational Infrastructure
+
+**Goal**: Establish core infrastructure components required for all user stories
+
+### Frontend API Setup
+
 - [ ] T015 Setup frontend API request wrapper in frontend/utils/api.js
 
 ### SQL Query Modules (Core Infrastructure)
@@ -15,6 +21,8 @@
 - [ ] T016h Implement audit logging service in backend/app/services/audit_service.py
 - [ ] T016i Create audit logging middleware in backend/app/api/deps.py (audit_dependency)
 - [ ] T016j [P] Create audit SQL queries in backend/app/core/sql_queries/audit.py
+
+**Checkpoint**: Core infrastructure should be in place for building features
 
 ---
 
@@ -64,9 +72,17 @@
 - [ ] T083 Implement comprehensive input validation for employee creation in backend/app/services/user_service.py
 - [ ] T084 Handle session expiration during form submission in frontend/utils/auth.js
 
-In the "Dependencies & Execution Order" section, update "User Story Dependencies" to include RBAC:
+---
 
-- **RBAC (Phase 3.5)**: Must complete after Foundational (Phase 2) and before User Stories that require authorization
+## Dependencies & Execution Order
+
+### Phase Dependencies
+
+- **Phase 2 (Foundational)**: Must be completed first to establish core infrastructure
+- **Phase 3.5 (RBAC)**: Must complete after Foundational (Phase 2) and before User Stories that require authorization
+
+### User Story Dependencies
+
 - **User Story 1 (P1)**: Can start after Foundational (Phase 2) - No dependencies on other stories
 - **User Story 2 (P1)**: Should start after RBAC (Phase 3.5) for proper access control
 - **User Story 3 (P2)**: Should start after RBAC (Phase 3.5) for proper access control
